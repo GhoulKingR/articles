@@ -11,13 +11,13 @@ function App() {
   ];
 
   return (
-    <Container role="main">
+    <Container>
       <div>
         <img src={Avatar} alt="avatar" />
         <h1>Jessica Randall</h1>
         <h2>London, United Kingdom</h2>
         <p>"Front-end developer and avid reader."</p>
-        <nav role="navigation">
+        <nav>
           <ul>
             {
               links.map((v, i) => (
