@@ -57,7 +57,7 @@ const Container = styled.div`
     }
 
     & > h1 {
-      font-weight: bold;
+      font-weight: semi-bold;
       line-height: 150%;
       font-size: 24px;
       letter-spacing: 0%;
