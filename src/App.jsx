@@ -11,19 +11,21 @@ function App() {
   ];
 
   return (
-    <Container>
+    <Container role="main">
       <div>
         <img src={Avatar} alt="avatar" />
         <h1>Jessica Randall</h1>
         <h2>London, United Kingdom</h2>
         <p>"Front-end developer and avid reader."</p>
-        <ul>
-          {
-            links.map((v, i) => (
-              <li key={i}>{v.name}</li>
-            ))
-          }
-        </ul>
+        <nav role="navigation">
+          <ul>
+            {
+              links.map((v, i) => (
+                <li key={i}>{v.name}</li>
+              ))
+            }
+          </ul>
+        </nav>
       </div>
     </Container>
   )
@@ -31,7 +33,7 @@ function App() {
 
 export default App;
 
-const Container = styled.div`
+const Container = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,27 +83,30 @@ const Container = styled.div`
       margin-bottom: 24px;
     }
 
-    & > ul {
-      list-style-type: none;
+    & > nav {
       width: 100%;
-      margin-bottom: -16px;
-
-      & > li {
-        background-color: #333333;
-        width: calc(inherit - 24px);
-        text-align: center;
-        padding: 12px;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 150%;
-        letter-spacing: 0%;
-        margin-bottom: 16px;
-        border-radius: 8px;
-
-        &:hover {
-          background-color: #C4F82A;
-          cursor: pointer;
-          color: #333333;
+      & > ul {
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: -16px;
+  
+        & > li {
+          background-color: #333333;
+          width: calc(inherit - 24px);
+          text-align: center;
+          padding: 12px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: 0%;
+          margin-bottom: 16px;
+          border-radius: 8px;
+  
+          &:hover {
+            background-color: #C4F82A;
+            cursor: pointer;
+            color: #333333;
+          }
         }
       }
     }
