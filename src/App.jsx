@@ -65,7 +65,7 @@ const Container = styled.main`
     }
 
     & > h2 {
-      color: #C4F82A;
+      color: #4ee1a0;
       font-weight: bold;
       font-size: 14px;
       line-height: 150%;
