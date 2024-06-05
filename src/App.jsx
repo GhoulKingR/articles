@@ -6,6 +6,7 @@ function App() {
     {name: "LogRocket", link: "https://blog.logrocket.com/author/oduahchigozie/"},
     {name: "freeCodeCamp", link: "https://www.freecodecamp.org/news/author/chigozie/"},
     {name: "Hashnode", link: "https://ghoulkingr.hashnode.dev/"},
+    {name: "Documentation Project", link: "https://sasuke-x.gitbook.io/select-api"}
   ];
 
   return (
