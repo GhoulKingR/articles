@@ -12,16 +12,16 @@ html {
 
 @font-face {
   font-family: Inter;
-  src: url(/articles/fonts/Inter-Bold.ttf);
+  src: url(/articles/fonts/static/Inter-Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: Inter;
-  src: url(/articles/fonts/Inter-Regular.ttf);
+  src: url(/articles/fonts/static/Inter-Regular.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: Inter;
-  src: url(/articles/fonts/Inter-SemiBold.ttf);
+  src: url(/articles/fonts/static/Inter-SemiBold.ttf);
   font-weight: semi-bold;
 }
