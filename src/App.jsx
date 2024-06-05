@@ -1,27 +1,25 @@
 import styled from "styled-components";
-import Avatar from "./assets/images/avatar-jessica.jpeg";
+import Avatar from "./assets/images/article-page-avatar.png";
 
 function App() {
   const links = [
-    {name: "GitHub"},
-    {name: "Frontend Mentor"},
-    {name: "LinkedIn"},
-    {name: "Twitter"},
-    {name: "Instagram"},
+    {name: "LogRocket", link: "https://blog.logrocket.com/author/oduahchigozie/"},
+    {name: "freeCodeCamp", link: "https://www.freecodecamp.org/news/author/chigozie/"},
+    {name: "Hashnode", link: "https://ghoulkingr.hashnode.dev/"},
   ];
 
   return (
     <Container>
       <div>
         <img src={Avatar} alt="avatar" />
-        <h1>Jessica Randall</h1>
-        <h2>London, United Kingdom</h2>
-        <p>"Front-end developer and avid reader."</p>
+        <h1>Chigozie Oduah</h1>
+        <h2>Lagos, Nigeria</h2>
+        <p>"Software Engineer // Technical Writer"</p>
         <nav>
           <ul>
             {
               links.map((v, i) => (
-                <li key={i}>{v.name}</li>
+                <li key={i} onClick={() => window.open(v.link, "_blank")} >{v.name}</li>
               ))
             }
           </ul>
